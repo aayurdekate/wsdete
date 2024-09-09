@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Details</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #000000;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #aca7a7;
+        }
+    </style>
+</head>
+<body>
+    <h1>Course Details</h1>
+    <table id="course-table">
+        <thead>
+            <tr>
+                <th>Course ID</th>
+                <th>Title</th>
+                <th>Instructor</th>
+                <th>Duration</th>
+                <th>Rating</th>
+                <th>Category</th>
+                <th>Price</th>
+                <th>Enrolled</th>
+            </tr>
+        </thead>
+        <tbody id="course-body">
+        </tbody>
+    </table>
+
+    <script>
+        fetch('rec.json')
+            .then(response => response.json())
+            .then(data => {
+ 
+                const courseBody = document.getElementById('course-body');
+                data.forEach(course => {
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                        <td>${course.courseId}</td>
+                        <td>${course.title}</td>
+                        <td>${course.instructor}</td>
+                        <td>${course.duration}</td>
+                        <td>${course.rating}</td>
+                        <td>${course.category}</td>
+                        <td>${course.price}</td>
+                        <td>${course.enrolled}</td>
+                    `;
+                    courseBody.appendChild(row);
+                });
+            })
+            .catch(error => console.error('Error:', error));
+    </script>
+</body>
+</html>

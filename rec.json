@@ -1,0 +1,62 @@
+[
+    {
+      "courseId": "C101",
+      "title": "Introduction to Web Development",
+      "instructor": "John Doe",
+      "duration": "10 hours",
+      "rating": 4.5,
+      "category": "Web Development",
+      "price": "$50",
+      "enrolled": "2500"
+    },
+    {
+      "courseId": "C102",
+      "title": "Data Structures and Algorithms",
+      "instructor": "Ayur Dekate",
+      "duration": "15 hours",
+      "rating": 4.8,
+      "category": "Computer Science",
+      "price": "$75",
+      "enrolled": "1800"
+    },
+    {
+      "courseId": "C103",
+      "title": "Machine Learning Fundamentals",
+      "instructor": "Sairam Bavirishetty",
+      "duration": "20 hours",
+      "rating": 4.9,
+      "category": "Artificial Intelligence",
+      "price": "$100",
+      "enrolled": "1200"
+    },
+    {
+      "courseId": "C104",
+      "title": "Introduction to Python Programming",
+      "instructor": "Chloy Costa",
+      "duration": "12 hours",
+      "rating": 4.6,
+      "category": "Programming",
+      "price": "$60",
+      "enrolled": "2000"
+    },
+    {
+      "courseId": "C105",
+      "title": "Web Design Principles",
+      "instructor": "Darshan Agrawal",
+      "duration": "8 hours",
+      "rating": 4.4,
+      "category": "Web Development",
+      "price": "$40",
+      "enrolled": "2800"
+    },
+    {
+      "courseId": "C106",
+      "title": "Database Management Systems",
+      "instructor": "Sujay Sharma",
+      "duration": "18 hours",
+      "rating": 4.7,
+      "category": "Computer Science",
+      "price": "$90",
+      "enrolled": "1500"
+    }
+  ]

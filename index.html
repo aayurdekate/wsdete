@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Catalogue</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Online Courses</h1>
+    
+    <div>
+        <label for="filter-creator">Filter by Course:</label>
+        <input type="text" id="filter-creator" placeholder="Search by course name">
+        <label for="sort">Sort by:</label>
+        <select id="sort">
+            <option value="type">Course Type</option>
+            <option value="course id">Course ID</option>
+        </select>
+        <button onclick="applyFilters()">Apply Filters</button>
+    </div>
+
+    <div id="courses-container"></div>
+
+    <div id="pagination">
+        <button id="prev-page" onclick="changePage(-1)">Previous</button>
+        <span id="current-page">1</span>
+        <button id="next-page" onclick="changePage(1)">Next</button>
+    </div>
+
+    <div id="sign-up-form">
+        <h2>Sign up for a Course</h2>
+        <form id="sign-up">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="course-id">Course ID:</label>
+            <input type="text" id="course-id" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" required>
+
+            <button id="sign-up-btn">Sign up</button>
+        </form>
+        <div id="sign-up-error"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
